@@ -1,0 +1,18 @@
+* {
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(17, 24, 39);
+}
+
+a {
+  color: inherit;
+  text-decoration-line: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
