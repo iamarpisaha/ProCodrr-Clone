@@ -1,3 +1,8 @@
+:root {
+  --text-gray: rgba(107, 114, 128, 1);
+  --text-light-gray: rgba(107, 114, 128, 0.6);
+}
+
 body {
   margin: 0;
   min-height: 110vh;
@@ -29,7 +34,9 @@ section .title-container {
   max-width: 768px;
   margin-inline: auto;
   text-align: center;
-  padding: 2rem 1rem;
+  padding-inline: 1rem;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
 }
 section h1.title {
   font-size: 2.25rem;
@@ -45,4 +52,101 @@ section .sub-title {
   color: rgb(107 114 128);
   font-weight: 300;
   margin-top: 0;
+}
+
+.grid-container {
+  display: grid;
+  padding-inline: 1rem;
+  gap: 2rem;
+  grid-template-columns: auto auto auto;
+
+  justify-content: space-between;
+}
+
+.grid-item {
+  border: 2px solid transparent;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.1s ease;
+}
+
+.grid-item:nth-child(2) {
+  transform: scale(1.05);
+}
+
+.grid-item img {
+  width: 100%;
+}
+
+.grid-item .description {
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 1.75rem;
+  color: var(--text-gray);
+  font-weight: 300;
+  margin-top: 0;
+  /* margin-top: 0.5rem; */
+}
+
+.grid-item .price {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--text-light-gray);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.grid-item .offer-price {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  margin-right: 0.5rem;
+}
+
+.grid-item .features {
+  list-style-type: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 0;
+}
+.features li + li {
+  margin-top: 1rem;
+}
+.features li {
+  display: flex;
+  gap: 0.75rem;
+}
+.features li img {
+  width: 1.3rem;
+}
+
+.grid-item .btn {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: var(--base-color);
+  display: block;
+  margin-block: 1.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.1s ease;
+}
+
+.grid-item:hover {
+  border: 2px solid rgb(var(--base-hover-color));
+}
+
+.grid-item .btn:hover {
+  background-color: rgb(var(--base-hover-color));
+  box-shadow: 0 0 4px 4px rgba(var(--base-hover-color), 0.3);
 }
