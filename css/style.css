@@ -58,7 +58,7 @@ section .sub-title {
   display: grid;
   padding-inline: 1rem;
   gap: 2rem;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
 
   justify-content: space-between;
 }
@@ -133,7 +133,8 @@ section .sub-title {
   padding-right: 1.25rem;
   background-color: var(--base-color);
   display: block;
-  margin-block: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
   color: #ffffff;
   font-weight: 500;
   font-size: 0.875rem;
@@ -149,4 +150,9 @@ section .sub-title {
 .grid-item .btn:hover {
   background-color: rgb(var(--base-hover-color));
   box-shadow: 0 0 4px 4px rgba(var(--base-hover-color), 0.3);
+}
+
+footer .footer-container {
+  padding: 2rem 1rem;
+  margin-top: 2rem;
 }
