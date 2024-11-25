@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+:root {
+  --primary-color: rgb(0, 74, 173);
+  --primary100: #d9e4f3;
+  --text-body: #3f3f3f;
+}
+
+body {
+  /* height: 100vh; */
+  background-color: var(--primary-color);
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.1),
+      transparent 1px
+    ),
+    linear-gradient(to left, rgba(255, 255, 255, 0.1), transparent 1px);
+  background-size: 56px 56px;
+}
+
+.form-container {
+  margin-top: 2rem;
+  background-color: rgb(255, 255, 255);
+  padding: 3rem;
+  border-radius: 24px;
+  border: 1px solid var(--primary-color);
+  box-shadow: 6px 6px var(--primary100);
+  width: 100%;
+  max-width: 475px;
+  margin-inline: auto;
+}
+
+.form-container img {
+  height: 56px;
+  width: 56px;
+  margin-bottom: 1rem;
+}
+
+.form-container h1 {
+  font-size: 32px;
+  line-height: 1.32;
+  color: var(--text-body);
+  margin-bottom: 10px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.form-container h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #000000d9;
+  margin-bottom: 3.5rem;
+}
+.input-group {
+  border: 1px solid #ced0d4;
+  border-radius: 0.5rem;
+  padding-inline: 1rem;
+  gap: 0.5rem;
+}
+.input-group img {
+  height: 26px;
+  width: 26px;
+  margin-bottom: 0;
+}
+.input-group span {
+  font-weight: 500;
+}
+.input-group input {
+  border: none;
+  padding-block: 11px;
+  width: 100%;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.input-group input::placeholder {
+  color: #696969;
+}
+
+form button {
+  width: 100%;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.6rem;
+  margin-block: 2rem;
+}
+
+.mail-link-section {
+  gap: 0.5rem;
+}
+.mail-link-section a {
+  color: var(--primary-color);
+  font-weight: 450;
+}
+
+.sign-up-section {
+  gap: 0.25rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.sign-up-section {
+  font-size: 12px;
+}
+
+.sign-up-section a {
+  font-weight: 600;
+  color: rgb(7, 113, 235);
+}
+
+footer {
+  flex-direction: column;
+  margin-top: 2.2rem;
+}
+footer p {
+  font-size: 12px;
+  color: #ffffff;
+  margin-block: 0.6rem;
+}
+
+footer div {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+  gap: 1.2rem;
+}
