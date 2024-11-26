@@ -11,6 +11,7 @@
 body {
   /* height: 100vh; */
   background-color: var(--primary-color);
+  padding-inline: 2rem;
   background-image: linear-gradient(
       to top,
       rgba(255, 255, 255, 0.1),
@@ -132,3 +133,27 @@ footer div {
   color: rgba(255, 255, 255, 0.8);
   gap: 1.2rem;
 }
+
+/* responsive css start  */
+@media (max-width: 553px) {
+  body {
+    padding-inline: 1.5rem;
+  }
+
+  .form-container {
+    padding: 1.5rem;
+  }
+  .form-container h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 348px) {
+  footer p {
+    text-align: center;
+  }
+  footer div {
+    gap: 1rem;
+  }
+}
+/* responsive css end */
